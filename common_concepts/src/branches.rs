@@ -1,5 +1,18 @@
 pub fn tutorial() {
-    repeat();
+    aforloop();
+}
+
+fn aforloop() {
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn expression_or_statement() -> i32 {
+    loop {
+        break 5;
+    } // ❌ error: mismatched types, expected `()`, found integer
 }
 
 fn repeat() {
